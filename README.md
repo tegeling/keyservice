@@ -22,9 +22,9 @@ Use your self signed certificate from steps 1 as an input parameter for this CLI
 
 `WrapEncryptionKey -c Keyservice_Cert.crt -i myKID`
 
-Copy your Key Identifier (like myKID in this example or use the default UUID option), because it is needed in step 5 when configuring
+Copy your Key Identifier (like myKID in this example or use the default UUID option), because it is needed in step 5 when configuring your cache-only key.
 
-Keys are wrapped in a JSON format. For example here is a valid response:
+Keys are wrapped in an encrypted JSON format. For example here is a valid response:
 
 ```javascript
 {
@@ -57,3 +57,11 @@ In your Salesforce Setup under **Key Management** choose your Tenant Secret Type
 Save your settings.
 
 ![Cache Only Key](/assets/cache-only-key.png)
+
+## Validate your Setup
+
+After you have successfully completed the previous steps, you can validate your setup by checking the **Details** of your new key material.
+It should show Status "Active" and Key Material Source as "Fetched".
+As described in https://help.salesforce.com/articleView?id=security_pe_byok_cache_check.htm&type=0 you can validate the connection to your new key service like in this screen:
+
+![Validate Key Service Connection](/assets/validate.png)
