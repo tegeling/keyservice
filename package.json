@@ -1,0 +1,23 @@
+{
+  "name": "keyservice",
+  "version": "1.0.0",
+  "description": "Sample keyservice for Shield Platform Encryption Cache-Only Keys",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tegeling/keyservice.git"
+  },
+  "author": "tegeling@salesforce.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tegeling/keyservice/issues"
+  },
+  "homepage": "https://github.com/tegeling/keyservice#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
