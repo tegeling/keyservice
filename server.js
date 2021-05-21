@@ -27,6 +27,12 @@ app.get("/kidsearch", (req, res) => {
   );
 });
 
+app.get("/myKID", (req, res) => {
+  res.send(
+    '{"kid" : "myKID","jwe" : "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00iLCJraWQiOiJteUtJRCJ9.A24dNvFdPv19WpfCvndJPeK-jqXBgP7HHDrV9uskChHsC7hrfn3_F3x0WR831y2xZgdTKbw5FV11NNuDOnuTdhHKad31NyDeDr-7ysXENm4DhXRrqXzNJ9M2AsxiqEAVbVqBQwl9UZziLT15i9jZ8qM5zGaTwkRf7VMXRPk2u773wO6GtX0UlAr2OYUlR7p1sEWzm6UfRnQQIdQhFVw3-ga5ZjqZw1ui-eiJj9ltLj60qFKpirZSQo3P0u9_Jg7FrQCEBWpVCIAl2zSFLufEk78JWKBfULhbVR2OdLmlSxgm6hzjP1klIwNR7e9QnLkkcrwfysT4LBr3WlVYb3HsMoGIXBdRXhW4gjV3dyFGpEaux6cuKFFEXzbefRf_c8MeDq-HElNBHL3jEz4ctipzVtGfZsRddfb4OeRja_5ehvShOyLo1S9hJfmKgu2w5MYBhKu6go5l942DRrnFW9iJwrpKHBLmvkBXGLgfD2A8cARe-zNY9AFZyYAVkvmVL1eywclA1xDTajCrm6EU0MHGz2WeTEr2PI9INIVrzZ4cP1oSMK4ZmJCRki6ynTq5L5v0VLyDBLde-ehUkkgL3zcY-wy7uwSJeoSEKNKsdyFOvEjx6U8fB-GMLYUGyTqTwk3Uyhdh3ZKCpz1kN6fKIXPvhDCeWEuO_sRwKglohVHsgyg.4he3hU5vwbeOWaKR.yMhHhlQlYWwv8XSPDzOnUxalwV9xLApQsJCmDC6YEAA.47WyuX0QFi9611Tv2ovjeg"}'
+  );
+});
+
 // Serve your app
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
